@@ -1,0 +1,15 @@
+{
+  "name": "red-button",
+  "type": "registry:ui",
+  "dependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:ui",
+      "content": "\"use client\";\r\n\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { cn } from \"@/lib/utils\";\r\n\r\ntype Props = {\r\n  children: React.ReactNode;\r\n  className?: string;\r\n};\r\nexport default function RedButton({ children, className, ...rest }: Props) {\r\n  return (\r\n    <Button {...rest} className={cn(className, \"bg-red-400\")}>\r\n      {children}{\" \"}\r\n    </Button>\r\n  );\r\n}\r\n",
+      "path": "ui/red-button.tsx",
+      "target": "components/ui/red-button.tsx"
+    }
+  ]
+}
