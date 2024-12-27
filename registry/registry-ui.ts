@@ -2,9 +2,9 @@ import { Registry } from "./schema";
 
 export const ui: Registry = [
   {
-    name: "scroll-area-fa",
+    name: "scroll-area-full-height",
     type: "registry:ui",
     dependencies: ["@radix-ui/react-scroll-area"],
-    files: ["ui/scroll-area-fa.tsx"],
+    files: ["ui/scroll-area-full-height.tsx"],
   },
 ];
